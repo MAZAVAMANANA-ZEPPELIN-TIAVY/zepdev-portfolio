@@ -23,12 +23,13 @@ export default function Contact() {
 
     NProgress.start();
 
-    emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE,
-      process.env.REACT_APP_EMAILJS_TEMPLATE,
-      formData,
-      process.env.REACT_APP_EMAILJS_PUBLIC
-    )
+    emailjs
+      .send(
+        "service_gpyj20g",
+        "template_hd08jyf",
+        formData,
+        "nVi9_lfGJAbRpL5go"
+      )
       .then(
         () => {
           NProgress.done();
