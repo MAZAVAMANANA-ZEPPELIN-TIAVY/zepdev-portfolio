@@ -10,20 +10,6 @@ export default function Projects() {
       image: "/images/projets/gestionSalaire/Capture d’écran (28).png",
       liveLink: "https://mada-digital.msi2025a.net",
     },
-    {
-      id: 2,
-      title: "Portfolio Personnel",
-      description: "Site vitrine responsive en React + Tailwind.",
-      image: "/images/projects/portfolio.jpg",
-      liveLink: "https://votre-portfolio.com",
-    },
-    {
-      id: 3,
-      title: "Migration WordPress",
-      description: "Refonte complète d’un site WordPress.",
-      image: "/images/projects/wordpress-migration.jpg",
-      liveLink: "https://site-wordpress.com",
-    },
   ];
 
   return (

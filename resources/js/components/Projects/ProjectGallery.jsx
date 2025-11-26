@@ -19,19 +19,6 @@ const projects = [
       "/images/projets/gestionSalaire/Capture d’écran (36).png",
     ],
   },
-  {
-    id: 2,
-    title: "Portfolio Personnel",
-    images: [
-      "/images/projects/portfolio1.jpg",
-      "/images/projects/portfolio2.jpg",
-    ],
-  },
-  {
-    id: 3,
-    title: "Migration WordPress",
-    images: ["/images/projects/wp1.jpg", "/images/projects/wp2.jpg"],
-  },
 ];
 
 export default function ProjectGallery() {

@@ -25,10 +25,10 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_gpyj20g",
-        "template_hd08jyf",
+        "#",
+        "#",
         formData,
-        "nVi9_lfGJAbRpL5go"
+        "#"
       )
       .then(
         () => {
