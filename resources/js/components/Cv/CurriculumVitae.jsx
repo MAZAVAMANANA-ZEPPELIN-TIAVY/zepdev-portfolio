@@ -17,7 +17,6 @@ import {
   faHtml5,
   faCss3Alt,
   faReact,
-  faJs,
   faPhp,
   faLaravel,
   faGitAlt,
@@ -50,13 +49,13 @@ export default function CurriculumVitae() {
               <TimelineItem
                 icon={faGraduationCap}
                 title="Master d’Aptitude au Professorat – Ingénierie en Mathématiques Informatique"
-                period="2024 – 2025"
+                period="2022 – 2025"
                 place="École Normale"
               />
               <TimelineItem
                 icon={faGraduationCap}
                 title="Licence d'Aptitude au Professorat – Génie Mathématique et Informatique"
-                period="2021 – 2022"
+                period="2019 – 2022"
                 place="École Normale"
               />
               <TimelineItem
@@ -76,14 +75,7 @@ export default function CurriculumVitae() {
             <div className="space-y-6">
               <TimelineItem
                 icon={faBriefcase}
-                title="Développeur web (Stagiaire Master) – sendBazar"
-                period="Juin – Juil. 2025"
-                place="sendBazar"
-                description="Migration d’un site WordPress vers une application web (Laravel backend, React + Tailwind frontend, API)."
-              />
-              <TimelineItem
-                icon={faBriefcase}
-                title="Développeur web (Stagiaire Licence) – MADA-Digital"
+                title="Développeur web (Stagiaire) – MADA-Digital"
                 period="Août – Déc. 2024"
                 place="MADA-Digital"
                 description="Travail en équipe agile ; développement d’une application de gestion des salariés (Laravel, Bootstrap, JavaScript)."
@@ -106,7 +98,6 @@ export default function CurriculumVitae() {
               <TechIcon icon={faCss3Alt} name="CSS" />
               <TechIcon icon={faWaveSquare} name="Tailwind CSS" /> 
               <TechIcon icon={faReact} name="React" />
-              <TechIcon icon={faJs} name="JavaScript" />
               <TechIcon icon={faPhp} name="PHP" />
               <TechIcon icon={faLaravel} name="Laravel" />
               <TechIcon icon={faWordpress} name="WordPress" />
@@ -154,7 +145,7 @@ export default function CurriculumVitae() {
               <li><FontAwesomeIcon icon={faMusic} className="mr-2 text-indigo-600"/>Musique</li>
               <li><FontAwesomeIcon icon={faPlane} className="mr-2 text-indigo-600"/>Voyage</li>
             </ul>
-
+{/* 
             <a
               href="/cv/CV_MAZAVAMANANA_Zeppelin_Tiavy.pdf"
               target="_blank"
@@ -162,7 +153,7 @@ export default function CurriculumVitae() {
               className="inline-block bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition"
             >
               Télécharger le CV
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

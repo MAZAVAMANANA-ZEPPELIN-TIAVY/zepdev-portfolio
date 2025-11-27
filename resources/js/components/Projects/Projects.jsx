@@ -7,7 +7,7 @@ export default function Projects() {
       id: 1,
       title: "Application RH",
       description: "Application web de gestion des salariés (Laravel + JavaScript).",
-      image: "/images/projets/gestionSalaire/Capture d’écran (28).png",
+      image: "/images/projets/gestionSalaire/c3.png",
       liveLink: "https://mada-digital.msi2025a.net",
     },
   ];
@@ -68,7 +68,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="px-5 py-2 sm:py-3 bg-green-600 text-white rounded-full hover:bg-green-700 shadow-md transition"
                   >
-                    Voir →
+                    Voir le site
                   </a>
                 </div>
               </div>

@@ -23,30 +23,30 @@ export default function Contact() {
 
     NProgress.start();
 
-    emailjs
-      .send(
-        "#",
-        "#",
-        formData,
-        "#"
-      )
-      .then(
-        () => {
-          NProgress.done();
-          toast.success("Merci pour votre message !", {
-            position: "top-right",
-            autoClose: 3000,
-          });
-          setFormData({ name: "", email: "", message: "" });
-        },
-        () => {
-          NProgress.done();
-          toast.error("Une erreur est survenue. Veuillez réessayer.", {
-            position: "top-right",
-            autoClose: 3000,
-          });
-        }
-      );
+   emailjs
+    .send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formData,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      () => {
+        NProgress.done();
+        toast.success("Merci pour votre message !", {
+          position: "top-right",
+          autoClose: 3000,
+        });
+        setFormData({ name: "", email: "", message: "" });
+      },
+      () => {
+        NProgress.done();
+        toast.error("Une erreur est survenue. Veuillez réessayer.", {
+          position: "top-right",
+          autoClose: 3000,
+        });
+      }
+    );
   };
 
   return (
