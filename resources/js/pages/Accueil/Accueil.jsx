@@ -45,7 +45,6 @@ export default function Accueil() {
         </div>
 
         <div className="relative grid items-center gap-10 px-6 py-12 sm:px-8 md:grid-cols-2 md:px-12 md:py-16 lg:px-16 lg:py-20">
-          {/* Texte */}
           <div className="text-center md:text-left">
             <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
               MAZAVAMANANA <br />
