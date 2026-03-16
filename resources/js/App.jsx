@@ -1,26 +1,32 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './include/Header';
 import Footer from './include/Footer';
-import Accueil from './components/Accueil/Accueil';
-import Contact from './components/Contact/Contact';
-import CurriculumVitae from './components/Cv/CurriculumVitae';
-import Projects from './components/Projects/Projects';
-import ProjectGallery  from './components/Projects/ProjectGallery';
+import Accueil from './pages/Accueil/Accueil';
+import Contact from './pages/Contact/Contact';
+import CurriculumVitae from './pages/Cv/CurriculumVitae';
+import Projects from './pages/Projects/Projects';
+import ProjectGallery from './pages/Projects/ProjectGallery';
 
 function App() {
   return (
     <Router>
-      <Header />
-      <main className="p-4 mt-15 mb-15">
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/Cv" element={<CurriculumVitae />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<ProjectGallery />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
-      <Footer />
+      <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
+        <Header />
+
+        <main className="flex-1 pt-24 pb-12">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+            <Routes>
+              <Route path="/" element={<Accueil />} />
+              <Route path="/cv" element={<CurriculumVitae />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:id" element={<ProjectGallery />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+        </main>
+
+        <Footer />
+      </div>
     </Router>
   );
 }
