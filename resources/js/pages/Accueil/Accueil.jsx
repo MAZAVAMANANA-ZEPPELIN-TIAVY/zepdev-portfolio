@@ -35,7 +35,6 @@ export default function Accueil() {
 
   return (
     <div className="space-y-12 md:space-y-20">
-      {/* HERO */}
       <section className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-blue-950 to-sky-700 text-white shadow-2xl">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute -top-16 -left-16 h-56 w-56 rounded-full bg-cyan-400 blur-3xl" />
