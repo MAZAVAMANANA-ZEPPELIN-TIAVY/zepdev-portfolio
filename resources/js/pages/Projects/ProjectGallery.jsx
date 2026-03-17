@@ -31,6 +31,22 @@ const projects = [
       "/images/projets/gestionSalaire/c11.png",
     ],
   },
+  {
+    id: 2,
+    title: "ObayaMadaTour",
+    category: "Site touristique",
+    stack: ["React", "Tailwind CSS", "JavaScript"],
+    description:
+      "Un site touristique moderne conçu pour présenter les destinations, les circuits, les offres et les services de voyage d’ObayaMadaTour avec une expérience utilisateur fluide et immersive.",
+    images: [
+      "/images/projets/obayaMadaTour/c1.png",
+      "/images/projets/obayaMadaTour/c2.png",
+      "/images/projets/obayaMadaTour/c3.png",
+      "/images/projets/obayaMadaTour/c4.png",
+      "/images/projets/obayaMadaTour/c5.png",
+      "/images/projets/obayaMadaTour/c6.png",
+    ],
+  },
 ];
 
 export default function ProjectGallery() {
@@ -178,14 +194,16 @@ export default function ProjectGallery() {
           className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 p-4 backdrop-blur-sm"
           onClick={closeLightbox}
         >
-          <div className="relative w-full max-w-6xl" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="relative w-full max-w-6xl"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img
               src={project.images[selectedIndex]}
               alt={`${project.title} - aperçu ${selectedIndex + 1}`}
               className="max-h-[82vh] w-full rounded-[1.5rem] object-contain shadow-2xl"
             />
 
-            {/* Top bar */}
             <div className="absolute left-4 top-4 rounded-full bg-black/50 px-4 py-2 text-sm font-medium text-white backdrop-blur">
               {selectedIndex + 1} / {project.images.length}
             </div>

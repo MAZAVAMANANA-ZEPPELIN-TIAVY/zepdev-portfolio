@@ -144,22 +144,29 @@ export default function CurriculumVitae() {
             <SectionTitle
               icon={faCode}
               title="Compétences"
-              subtitle="Outils, frameworks et technologies"
+              subtitle="Technologies, méthodes et outils maîtrisés"
             />
 
             <div className="mt-8 space-y-8">
-              <SkillBlock title="Développement web" icon={faCode}>
+              <SkillBlock title="Développement web" icon={faLaptopCode}>
                 <TechBadge icon={faHtml5} name="HTML" />
                 <TechBadge icon={faCss3Alt} name="CSS" />
                 <TextBadge name="Tailwind CSS" />
-                <TextBadge name="Bootstrap" />
                 <TechBadge icon={faReact} name="React" />
-                <TextBadge name="JavaScript" />
                 <TechBadge icon={faPhp} name="PHP" />
                 <TechBadge icon={faLaravel} name="Laravel" />
-                <TechBadge icon={faWordpress} name="WordPress" />
                 <TechBadge icon={faGitAlt} name="Git / GitHub" />
-                <TextBadge name="Agile / Scrum" />
+                <TextBadge name="Méthode Agile (Scrum)" />
+              </SkillBlock>
+
+              <SkillBlock title="JDBC / Développement Java" icon={faCode}>
+                <TechBadge icon={faJava} name="Java" />
+                <TextBadge name="JDBC" />
+                <TextBadge name="NetBeans" />
+              </SkillBlock>
+
+              <SkillBlock title="Systèmes de gestion de contenu" icon={faGlobe}>
+                <TechBadge icon={faWordpress} name="WordPress" />
               </SkillBlock>
 
               <SkillBlock title="Base de données" icon={faDatabase}>
@@ -168,8 +175,16 @@ export default function CurriculumVitae() {
                 <TextBadge name="Merise" />
               </SkillBlock>
 
-              <SkillBlock title="Autres langages" icon={faCode}>
-                <TechBadge icon={faJava} name="Java" />
+              <SkillBlock title="Algorithmique et programmation" icon={faCode}>
+                <TextBadge name="Conception d’algorithmes" />
+                <TextBadge name="Structures de données" />
+                <TextBadge name="Logique de programmation" />
+              </SkillBlock>
+
+              <SkillBlock title="Bureautique" icon={faBriefcase}>
+                <TextBadge name="Microsoft Word" />
+                <TextBadge name="Microsoft Excel" />
+                <TextBadge name="Microsoft PowerPoint" />
               </SkillBlock>
             </div>
           </Card>

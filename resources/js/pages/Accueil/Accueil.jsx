@@ -37,7 +37,6 @@ export default function Accueil() {
     <div className="space-y-12 md:space-y-20">
       {/* HERO */}
       <section className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-blue-950 to-sky-700 text-white shadow-2xl">
-        {/* Background decorations */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute -top-16 -left-16 h-56 w-56 rounded-full bg-cyan-400 blur-3xl" />
           <div className="absolute top-1/3 right-0 h-72 w-72 rounded-full bg-blue-500 blur-3xl" />
@@ -74,7 +73,7 @@ export default function Accueil() {
               </Link>
 
               <a
-                href="/cv.pdf"
+                href="/cv/CV_MAZAVAMANANA_Zeppelin_Tiavy.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-300/40 px-6 py-3 font-semibold text-cyan-200 transition duration-300 hover:bg-cyan-300/10"

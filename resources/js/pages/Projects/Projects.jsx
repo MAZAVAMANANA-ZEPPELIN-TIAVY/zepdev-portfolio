@@ -6,7 +6,6 @@ import {
   FaFolderOpen,
   FaCode,
   FaGlobe,
-  FaLaptopCode,
 } from "react-icons/fa";
 
 export default function Projects() {
@@ -20,6 +19,16 @@ export default function Projects() {
       image: "/images/projets/gestionSalaire/c3.png",
       liveLink: "https://mada-digital.msi2025a.net",
       stack: ["Laravel", "JavaScript", "Bootstrap", "MySQL"],
+    },
+    {
+      id: 2,
+      title: "ObayaMadaTour",
+      category: "Site touristique",
+      description:
+        "Site touristique conçu pour mettre en valeur les destinations, circuits, services et expériences proposés par ObayaMadaTour, avec une interface moderne, attractive et responsive.",
+      image: "/images/projets/obayaMadaTour/c1.png",
+      liveLink: "https://obayamadatour.msi2025a.net/",
+      stack: ["Laravel", "React", "Tailwind CSS"],
     },
   ];
 
@@ -58,7 +67,7 @@ export default function Projects() {
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2 lg:min-w-[320px]">
-              <StatCard value={projects.length} label="Projet disponible" />
+              <StatCard value={projects.length} label="Projets disponibles" />
               <StatCard value="Responsive" label="Approche moderne" />
             </div>
           </div>
