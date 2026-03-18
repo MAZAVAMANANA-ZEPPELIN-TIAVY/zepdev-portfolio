@@ -117,22 +117,22 @@ export default function Accueil() {
           <div className="flex justify-center md:justify-end">
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-cyan-400/30 blur-2xl" />
-              <div className="relative rounded-[2rem] border border-white/20 bg-white/10 p-4 shadow-2xl backdrop-blur-md">
-                <img
-                  src="/images/couverture/Zeppelin.jpg"
-                  alt="Zeppélin Tiavy"
-                  className="h-64 w-64 rounded-[1.5rem] object-cover shadow-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
-                />
-              </div>
+                <div className="relative rounded-[2rem] border border-white/20 bg-white/10 p-4 shadow-2xl backdrop-blur-md">
+                  <img
+                    src="/images/couverture/Zeppelin.jpg"
+                    alt="Zeppélin Tiavy"
+                    className="h-64 w-64 rounded-[1.5rem] object-cover object-top shadow-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
+                  />
+                </div>
 
-              <div className="absolute -bottom-4 -left-4 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-left shadow-lg backdrop-blur-md">
-                <p className="text-xs uppercase tracking-wider text-cyan-200">
-                  Spécialités
-                </p>
-                <p className="mt-1 text-sm font-semibold text-white">
-                  React • Laravel • Tailwind
-                </p>
-              </div>
+                <div className="absolute -bottom-4 -left-4 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-left shadow-lg backdrop-blur-md">
+                  <p className="text-xs uppercase tracking-wider text-cyan-200">
+                    Spécialités
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-white">
+                    React • Laravel • Tailwind
+                  </p>
+                </div>
             </div>
           </div>
         </div>

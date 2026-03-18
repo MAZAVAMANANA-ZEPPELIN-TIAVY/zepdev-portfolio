@@ -99,13 +99,13 @@ export default function CurriculumVitae() {
             <div className="mt-8 space-y-6">
               <TimelineItem
                 icon={faGraduationCap}
-                title="Master d’Aptitude au Professorat – Ingénierie en Mathématiques Informatique"
+                title="Master d’Aptitude au Professorat – Ingénierie en Mathématiques et Informatique"
                 period="2023 – 2024"
                 place="École Normale"
               />
               <TimelineItem
                 icon={faGraduationCap}
-                title="Licence d’Aptitude au Professorat – Génie Mathématique et Informatique"
+                title="Licence d’Aptitude au Professorat – Génie Mathématiques et Informatique"
                 period="2021 – 2022"
                 place="École Normale"
               />
@@ -132,6 +132,14 @@ export default function CurriculumVitae() {
                 period="Août 2024 – Décembre 2024"
                 place="MADA-Digital"
                 description="Travail en équipe agile et participation au développement d’une application de gestion des salariés avec Laravel, Bootstrap et JavaScript."
+              />
+
+              <TimelineItem
+                icon={faBriefcase}
+                title="Développeur web – ObayaMadaTour"
+                period="Février 2025"
+                place="Projet web touristique"
+                description="Conception et développement d’un site touristique moderne pour mettre en valeur les destinations, circuits, services et expériences proposés par ObayaMadaTour, avec une interface attractive, responsive et une intégration de technologies comme Laravel, React et Tailwind CSS."
               />
             </div>
           </Card>
