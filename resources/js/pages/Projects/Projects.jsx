@@ -37,7 +37,6 @@ export default function Projects() {
       id="projects"
       className="relative overflow-hidden px-4 py-8 sm:px-6 sm:py-10 lg:px-8"
     >
-      {/* Fond décoratif */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-slate-50 via-white to-blue-50" />
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -left-16 top-0 h-48 w-48 rounded-full bg-blue-200/40 blur-3xl sm:h-64 sm:w-64" />
