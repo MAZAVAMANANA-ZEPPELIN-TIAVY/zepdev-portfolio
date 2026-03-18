@@ -39,12 +39,12 @@ const projects = [
     description:
       "Un site touristique moderne conçu pour présenter les destinations, les circuits, les offres et les services de voyage d’ObayaMadaTour avec une expérience utilisateur fluide et immersive.",
     images: [
-      "/images/projets/obayaMadaTour/c1.png",
-      "/images/projets/obayaMadaTour/c2.png",
-      "/images/projets/obayaMadaTour/c3.png",
-      "/images/projets/obayaMadaTour/c4.png",
-      "/images/projets/obayaMadaTour/c5.png",
-      "/images/projets/obayaMadaTour/c6.png",
+      "/images/projets/obayaMada/c1.png",
+      "/images/projets/obayaMada/c2.png",
+      "/images/projets/obayaMada/c3.png",
+      "/images/projets/obayaMada/c4.png",
+      "/images/projets/obayaMada/c5.png",
+      "/images/projets/obayaMada/c6.png",
     ],
   },
 ];

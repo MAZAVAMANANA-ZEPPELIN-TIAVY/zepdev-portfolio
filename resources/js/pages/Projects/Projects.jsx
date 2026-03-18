@@ -26,7 +26,7 @@ export default function Projects() {
       category: "Site touristique",
       description:
         "Site touristique conçu pour mettre en valeur les destinations, circuits, services et expériences proposés par ObayaMadaTour, avec une interface moderne, attractive et responsive.",
-      image: "/images/projets/obayaMadaTour/c1.png",
+      image: "/images/projets/obayaMada/c1.png",
       liveLink: "https://obayamadatour.msi2025a.net/",
       stack: ["Laravel", "React", "Tailwind CSS"],
     },
