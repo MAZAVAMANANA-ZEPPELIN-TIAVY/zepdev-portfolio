@@ -38,7 +38,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/cv/CV_MAZAVAMANANA_Zeppelin_Tiavy.pdf" className="hover:text-white transition">
+                <a href="/cv/MAZAVAMANANA_Zeppelin_Tiavy_CV.pdf" className="hover:text-white transition">
                   Curriculum vitæ
                 </a>
               </li>

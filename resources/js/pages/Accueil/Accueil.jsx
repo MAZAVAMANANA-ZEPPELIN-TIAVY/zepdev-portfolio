@@ -72,7 +72,7 @@ export default function Accueil() {
               </Link>
 
               <a
-                href="/cv/CV_MAZAVAMANANA_Zeppelin_Tiavy.pdf"
+                href="/cv/MAZAVAMANANA_Zeppelin_Tiavy_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-300/40 px-6 py-3 font-semibold text-cyan-200 transition duration-300 hover:bg-cyan-300/10"
@@ -119,7 +119,7 @@ export default function Accueil() {
               <div className="absolute inset-0 rounded-full bg-cyan-400/30 blur-2xl" />
                 <div className="relative rounded-[2rem] border border-white/20 bg-white/10 p-4 shadow-2xl backdrop-blur-md">
                   <img
-                    src="/images/couverture/Zeppelin.jpg"
+                    src="/images/couverture/zepdev.jpg"
                     alt="Zeppélin Tiavy"
                     className="h-64 w-64 rounded-[1.5rem] object-cover object-top shadow-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
                   />

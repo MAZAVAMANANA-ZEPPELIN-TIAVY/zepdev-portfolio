@@ -66,7 +66,7 @@ export default function CurriculumVitae() {
 
             <div className="flex flex-col gap-4 lg:items-end">
               <a
-                href="/cv/CV_MAZAVAMANANA_Zeppelin_Tiavy.pdf"
+                href="/cv/MAZAVAMANANA_Zeppelin_Tiavy_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-300 sm:w-auto"
