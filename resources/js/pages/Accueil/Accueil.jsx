@@ -148,7 +148,7 @@ export default function Accueil() {
             Un développeur motivé, rigoureux et orienté résultat
           </h2>
           <p className="text-base leading-8 text-slate-600">
-            Développeur web junior, je crée des applications modernes avec
+            Développeur web, je crée des applications modernes avec
             Laravel, React, Bootstrap et Tailwind CSS. J’interviens aussi bien
             sur le frontend que sur le backend, avec une attention particulière
             portée à la structure du code, à la performance et à la qualité du
