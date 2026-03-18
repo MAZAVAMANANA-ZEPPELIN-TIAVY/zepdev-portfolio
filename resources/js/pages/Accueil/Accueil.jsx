@@ -84,7 +84,7 @@ export default function Accueil() {
 
             <div className="mt-8 flex justify-center gap-4 md:justify-start">
               <a
-                href="https://www.facebook.com/tiavy.breedje/"
+                href="https://www.facebook.com/zeppelin.tiavy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-lg text-white backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-blue-600"

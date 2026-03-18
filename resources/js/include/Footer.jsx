@@ -74,7 +74,7 @@ export default function Footer() {
 
             <div className="mt-5 flex gap-3">
               <a
-                href="https://www.facebook.com/tiavy.breedje/"
+                href="https://www.facebook.com/zeppelin.tiavy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-slate-200 transition hover:-translate-y-1 hover:bg-blue-600 hover:text-white"
