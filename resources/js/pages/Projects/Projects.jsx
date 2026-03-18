@@ -16,7 +16,7 @@ export default function Projects() {
       category: "Application web",
       description:
         "Application web de gestion des salariés conçue pour faciliter l’administration du personnel, le suivi des informations RH et l’organisation interne.",
-      image: "/images/projets/gestionSalaire/c3.png",
+      image: "/images/projets/gestionSalaire/c1.png",
       liveLink: "https://mada-digital.msi2025a.net",
       stack: ["Laravel", "JavaScript", "Bootstrap", "MySQL"],
     },
