@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -18,6 +19,7 @@ import {
   faPhone,
   faMapMarkerAlt,
   faCheckCircle,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -259,6 +261,25 @@ export default function CurriculumVitae() {
               </div>
             </Card>
           </div>
+        </div>
+
+        <div className="mt-8 overflow-hidden rounded-[2rem] bg-gradient-to-r from-slate-950 via-blue-950 to-blue-700 px-6 py-10 text-center text-white shadow-xl sm:px-10">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200">
+            Collaboration
+          </p>
+          <h2 className="mx-auto mt-3 max-w-2xl text-2xl font-black sm:text-3xl">
+            Mon profil correspond à votre besoin ?
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-200 sm:text-base">
+            Je suis disponible pour échanger sur un site vitrine, une application web ou une mission de développement full-stack.
+          </p>
+          <Link
+            to="/contact"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-200"
+          >
+            Me contacter
+            <FontAwesomeIcon icon={faArrowRight} />
+          </Link>
         </div>
       </div>
     </section>

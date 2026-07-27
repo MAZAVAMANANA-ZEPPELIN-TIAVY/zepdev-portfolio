@@ -1,34 +1,26 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './include/Header';
-import Footer from './include/Footer';
-import Accueil from './pages/Accueil/Accueil';
-import Contact from './pages/Contact/Contact';
-import CurriculumVitae from './pages/Cv/CurriculumVitae';
-import Projects from './pages/Projects/Projects';
-import ProjectGallery from './pages/Projects/ProjectGallery';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Accueil from "./pages/Accueil";
+import Contact from "./pages/Contact";
+import CurriculumVitae from "./pages/CurriculumVitae";
+import ProjectGallery from "./pages/ProjectGallery";
+import Projects from "./pages/Projects";
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
+    <BrowserRouter>
+      <div className="min-h-screen bg-slate-50">
         <Header />
-
-        <main className="flex-1 pt-24 pb-12">
-          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-            <Routes>
-              <Route path="/" element={<Accueil />} />
-              <Route path="/cv" element={<CurriculumVitae />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/projects/:id" element={<ProjectGallery />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </div>
-        </main>
-
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/cv" element={<CurriculumVitae />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectGallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
-
-export default App;
