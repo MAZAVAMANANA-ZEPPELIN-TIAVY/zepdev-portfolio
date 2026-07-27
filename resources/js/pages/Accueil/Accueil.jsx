@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebook,
   FaGithub,
@@ -9,56 +9,74 @@ import {
   FaCode,
   FaLaptopCode,
   FaDatabase,
-} from 'react-icons/fa';
+  FaLayerGroup,
+  FaCheckCircle,
+} from "react-icons/fa";
 
 export default function Accueil() {
   const services = [
     {
       icon: <FaLaptopCode />,
-      title: 'Développement web',
+      title: "Développement web",
       description:
-        'Création de sites et applications web modernes, responsives et performantes.',
+        "Création de sites et applications web modernes, responsives, rapides et adaptés aux besoins réels.",
     },
     {
       icon: <FaCode />,
-      title: 'Frontend & UI',
+      title: "Frontend & UI",
       description:
-        'Interfaces élégantes, intuitives et optimisées pour offrir une excellente expérience utilisateur.',
+        "Interfaces propres, élégantes et faciles à utiliser avec React, Tailwind CSS et une bonne expérience utilisateur.",
     },
     {
       icon: <FaDatabase />,
-      title: 'Backend & Base de données',
+      title: "Backend & Base de données",
       description:
-        'Conception de solutions robustes, sécurisées et maintenables avec une bonne architecture.',
+        "Conception de solutions robustes avec Laravel, MySQL, logique métier claire et structure maintenable.",
     },
   ];
 
+  const stats = [
+    { value: "2+", label: "Projets réalisés" },
+    { value: "Fullstack", label: "Frontend & Backend" },
+    { value: "Responsive", label: "Mobile, tablette, desktop" },
+  ];
+
+  const technologies = ["React", "Laravel", "Tailwind CSS", "MySQL", "GitHub"];
+
   return (
-    <div className="space-y-12 md:space-y-20">
-      <section className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-blue-950 to-sky-700 text-white shadow-2xl">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute -top-16 -left-16 h-56 w-56 rounded-full bg-cyan-400 blur-3xl" />
-          <div className="absolute top-1/3 right-0 h-72 w-72 rounded-full bg-blue-500 blur-3xl" />
-          <div className="absolute bottom-0 left-1/3 h-56 w-56 rounded-full bg-indigo-500 blur-3xl" />
+    <div className="space-y-16 md:space-y-24">
+      {/* HERO */}
+      <section className="relative overflow-hidden rounded-[2rem] bg-slate-950 text-white shadow-2xl">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-blue-600/30 blur-3xl" />
+          <div className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-cyan-400/20 blur-3xl" />
+          <div className="absolute bottom-0 left-1/2 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl" />
         </div>
 
-        <div className="relative grid items-center gap-10 px-6 py-12 sm:px-8 md:grid-cols-2 md:px-12 md:py-16 lg:px-16 lg:py-20">
+        <div className="relative grid items-center gap-12 px-5 py-12 sm:px-8 md:grid-cols-2 md:px-12 md:py-16 lg:px-16 lg:py-20">
           <div className="text-center md:text-left">
-            <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
+              <FaLayerGroup />
+              Portfolio professionnel
+            </div>
+
+            <h1 className="text-3xl font-black leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               MAZAVAMANANA <br />
-              <span className="text-cyan-300">Zeppélin Tiavy</span>
+              <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
+                Zeppélin Tiavy
+              </span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-200 sm:text-base md:mx-0 md:text-lg">
-              Je conçois des applications web modernes, responsives et fiables
-              avec une approche centrée sur la qualité, la clarté du design et
-              l’expérience utilisateur.
+            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base md:mx-0 md:text-lg">
+              Développeur web spécialisé dans la création d’applications
+              modernes, responsives et professionnelles avec React, Laravel et
+              Tailwind CSS.
             </p>
 
-            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center md:justify-start">
+            <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center md:justify-start">
               <Link
                 to="/projects"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-slate-900 shadow-lg transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-300"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:bg-cyan-300 sm:w-auto"
               >
                 Voir mes projets
                 <FaArrowRight />
@@ -66,7 +84,7 @@ export default function Accueil() {
 
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur-md transition duration-300 hover:bg-white/20"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-bold text-white backdrop-blur transition hover:bg-white/20 sm:w-auto"
               >
                 Me contacter
               </Link>
@@ -75,175 +93,178 @@ export default function Accueil() {
                 href="/cv/MAZAVAMANANA_Zeppelin_Tiavy_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-300/40 px-6 py-3 font-semibold text-cyan-200 transition duration-300 hover:bg-cyan-300/10"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-cyan-300/40 px-6 py-3 text-sm font-bold text-cyan-200 transition hover:bg-cyan-300/10 sm:w-auto"
               >
-                Télécharger mon CV
+                CV
                 <FaDownload />
               </a>
             </div>
 
-            <div className="mt-8 flex justify-center gap-4 md:justify-start">
-              <a
+            <div className="mt-8 flex justify-center gap-3 md:justify-start">
+              <SocialLink
                 href="https://www.facebook.com/zeppelin.tiavy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-lg text-white backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-blue-600"
-                aria-label="Facebook"
-              >
-                <FaFacebook />
-              </a>
-              <a
+                label="Facebook"
+                icon={<FaFacebook />}
+              />
+              <SocialLink
                 href="https://www.linkedin.com/in/zepp%C3%A9lin-tiavy-mazavamanana-6b60302aa/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-lg text-white backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-sky-500"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin />
-              </a>
-              <a
+                label="LinkedIn"
+                icon={<FaLinkedin />}
+              />
+              <SocialLink
                 href="https://github.com/MAZAVAMANANA-ZEPPELIN-TIAVY"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-lg text-white backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-slate-800"
-                aria-label="GitHub"
-              >
-                <FaGithub />
-              </a>
+                label="GitHub"
+                icon={<FaGithub />}
+              />
             </div>
           </div>
 
-          {/* Image */}
           <div className="flex justify-center md:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-cyan-400/30 blur-2xl" />
-                <div className="relative rounded-[2rem] border border-white/20 bg-white/10 p-4 shadow-2xl backdrop-blur-md">
-                  <img
-                    src="/images/couverture/zepdev.jpg"
-                    alt="Zeppélin Tiavy"
-                    className="h-64 w-64 rounded-[1.5rem] object-cover object-top shadow-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
-                  />
-                </div>
+              <div className="absolute inset-0 rounded-[2rem] bg-cyan-400/25 blur-3xl" />
 
-                <div className="absolute -bottom-4 -left-4 rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-left shadow-lg backdrop-blur-md">
-                  <p className="text-xs uppercase tracking-wider text-cyan-200">
-                    Spécialités
-                  </p>
-                  <p className="mt-1 text-sm font-semibold text-white">
-                    React • Laravel • Tailwind
-                  </p>
-                </div>
+              <div className="relative rounded-[2rem] border border-white/10 bg-white/10 p-4 shadow-2xl backdrop-blur">
+                <img
+                  src="/images/couverture/zepdev.jpg"
+                  alt="Zeppélin Tiavy"
+                  className="h-72 w-72 rounded-[1.5rem] object-cover object-top shadow-xl sm:h-80 sm:w-80 lg:h-96 lg:w-96"
+                />
+              </div>
+
+              <div className="absolute -bottom-5 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-white/10 bg-slate-900/90 px-5 py-4 text-center shadow-xl backdrop-blur">
+                <p className="text-xs uppercase tracking-[0.2em] text-cyan-200">
+                  Stack principale
+                </p>
+                <p className="mt-1 text-sm font-bold text-white">
+                  React • Laravel • Tailwind CSS
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* A PROPOS + INFOS */}
-      <section className="grid gap-8 md:grid-cols-2">
-        <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-8">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
+      {/* STATS */}
+      <section className="grid gap-4 sm:grid-cols-3">
+        {stats.map((stat, index) => (
+          <div
+            key={index}
+            className="rounded-[1.5rem] border border-slate-200 bg-white p-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+          >
+            <p className="text-2xl font-black text-slate-950">{stat.value}</p>
+            <p className="mt-2 text-sm font-medium text-slate-500">
+              {stat.label}
+            </p>
+          </div>
+        ))}
+      </section>
+
+      {/* ABOUT */}
+      <section className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-blue-600">
             À propos de moi
           </p>
-          <h2 className="mb-5 text-2xl font-bold text-slate-900 sm:text-3xl">
-            Un développeur motivé, rigoureux et orienté résultat
+
+          <h2 className="text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
+            Développeur web rigoureux, créatif et orienté résultat
           </h2>
-          <p className="text-base leading-8 text-slate-600">
-            Développeur web, je crée des applications modernes avec
-            Laravel, React, Bootstrap et Tailwind CSS. J’interviens aussi bien
-            sur le frontend que sur le backend, avec une attention particulière
-            portée à la structure du code, à la performance et à la qualité du
-            design.
+
+          <p className="mt-5 text-base leading-8 text-slate-600">
+            Je développe des applications web modernes avec Laravel, React,
+            Bootstrap et Tailwind CSS. J’accorde une grande importance à la
+            clarté du design, à la structure du code, à la performance et à
+            l’expérience utilisateur.
           </p>
+
           <p className="mt-4 text-base leading-8 text-slate-600">
-            Mon objectif est de proposer des solutions fiables, professionnelles
-            et agréables à utiliser, capables de répondre concrètement aux
-            besoins d’un client ou d’un projet.
+            Mon objectif est de transformer une idée ou un besoin en solution
+            professionnelle, fiable et agréable à utiliser.
           </p>
         </div>
 
-        <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-8">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
-            Informations personnelles
+        <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-6 text-white shadow-xl sm:p-8">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">
+            Informations
           </p>
-          <h2 className="mb-5 text-2xl font-bold text-slate-900 sm:text-3xl">
-            Coordonnées
-          </h2>
 
-          <div className="space-y-5 text-slate-700">
-            <div className="grid gap-1 sm:grid-cols-[140px_1fr]">
-              <span className="font-semibold text-slate-900">Nationalité</span>
-              <span>Malagasy</span>
-            </div>
-
-            <div className="grid gap-1 sm:grid-cols-[140px_1fr]">
-              <span className="font-semibold text-slate-900">Adresse</span>
-              <span>Antsiranana, Madagascar</span>
-            </div>
-
-            <div className="grid gap-1 sm:grid-cols-[140px_1fr]">
-              <span className="font-semibold text-slate-900">Email</span>
-              <span className="break-all">
-                zeppelintiavymazavamanana@gmail.com
-              </span>
-            </div>
-
-            <div className="grid gap-1 sm:grid-cols-[140px_1fr]">
-              <span className="font-semibold text-slate-900">Téléphone</span>
-              <span>+261 32 55 727 86</span>
-            </div>
+          <div className="space-y-4">
+            <InfoRow label="Nationalité" value="Malagasy" />
+            <InfoRow label="Adresse" value="Antsiranana, Madagascar" />
+            <InfoRow
+              label="Email"
+              value="zeppelintiavymazavamanana@gmail.com"
+            />
+            <InfoRow label="Téléphone" value="+261 32 55 727 86" />
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section className="rounded-[2rem] bg-slate-100 px-6 py-10 sm:px-8 md:px-10 md:py-14">
-        <div className="mb-10 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
-            Ce que je peux faire
+      <section className="rounded-[2rem] bg-slate-100 px-5 py-12 sm:px-8 lg:px-10">
+        <div className="mx-auto mb-10 max-w-3xl text-center">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-blue-600">
+            Services
           </p>
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl md:text-4xl">
-            Mes domaines d’intervention
+
+          <h2 className="text-2xl font-black tracking-tight text-slate-950 sm:text-3xl md:text-4xl">
+            Ce que je peux réaliser
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-slate-600">
-            Je développe des solutions modernes avec une attention particulière
-            portée à l’esthétique, à la performance et à la maintenabilité.
+
+          <p className="mt-4 text-slate-600">
+            Je conçois des solutions web modernes, propres et adaptées à une
+            utilisation professionnelle.
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-2xl text-blue-600">
-                {service.icon}
-              </div>
-              <h3 className="mb-3 text-xl font-semibold text-slate-900">
-                {service.title}
-              </h3>
-              <p className="leading-7 text-slate-600">
-                {service.description}
-              </p>
-            </div>
+            <ServiceCard key={index} {...service} />
           ))}
         </div>
       </section>
 
+      {/* TECHNOLOGIES */}
+      <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+        <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-blue-600">
+              Technologies
+            </p>
+            <h2 className="text-2xl font-black text-slate-950">
+              Outils que j’utilise
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {technologies.map((tech) => (
+              <span
+                key={tech}
+                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700"
+              >
+                <FaCheckCircle className="text-blue-600" />
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="rounded-[2rem] bg-gradient-to-r from-slate-900 via-blue-900 to-sky-700 px-6 py-12 text-center text-white shadow-xl sm:px-8 md:px-12">
-        <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl">
+      <section className="rounded-[2rem] bg-gradient-to-r from-slate-950 via-blue-950 to-sky-700 px-6 py-12 text-center text-white shadow-xl sm:px-8 md:px-12">
+        <h2 className="text-2xl font-black sm:text-3xl md:text-4xl">
           Vous avez un projet en tête ?
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-slate-200">
+
+        <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-200 sm:text-base">
           Je suis disponible pour collaborer sur des projets web modernes,
           fonctionnels et bien structurés.
         </p>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3 font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300 sm:w-auto"
           >
             Me contacter
             <FaArrowRight />
@@ -251,12 +272,49 @@ export default function Accueil() {
 
           <Link
             to="/projects"
-            className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/20"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3 font-bold text-white transition hover:bg-white/20 sm:w-auto"
           >
             Voir mes réalisations
           </Link>
         </div>
       </section>
+    </div>
+  );
+}
+
+function SocialLink({ href, label, icon }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-lg text-white backdrop-blur transition hover:-translate-y-1 hover:bg-blue-600"
+    >
+      {icon}
+    </a>
+  );
+}
+
+function InfoRow({ label, value }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+      <p className="text-sm text-slate-400">{label}</p>
+      <p className="mt-1 break-all font-semibold text-white">{value}</p>
+    </div>
+  );
+}
+
+function ServiceCard({ icon, title, description }) {
+  return (
+    <div className="group rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-2 hover:shadow-xl">
+      <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-2xl text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
+        {icon}
+      </div>
+
+      <h3 className="text-xl font-bold text-slate-950">{title}</h3>
+
+      <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
     </div>
   );
 }
