@@ -286,8 +286,6 @@ export default function CurriculumVitae() {
   );
 }
 
-/* ---------- Composants ---------- */
-
 function BackgroundDecor() {
   return (
     <>
